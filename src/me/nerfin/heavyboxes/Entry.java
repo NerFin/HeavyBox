@@ -34,8 +34,4 @@ public class Entry extends JavaPlugin {
     @Override
     public void onDisable() {
     }
-
-    public Entry getInstance() {
-        return this;
-    }
 }
