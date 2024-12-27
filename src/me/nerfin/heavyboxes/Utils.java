@@ -7,7 +7,7 @@ import org.bukkit.persistence.PersistentDataType;
 
 public class Utils {
 
-    public static Entry plugin;
+    private static Entry plugin;
 
     public static void setPlugin(Entry plugin) {
         Utils.plugin = plugin;

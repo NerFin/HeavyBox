@@ -1,6 +1,6 @@
 name: HeavyBoxes
 main: me.nerfin.heavyboxes.Entry
-version: 1.2
+version: 1.2.1
 
 commands:
   heavybox:

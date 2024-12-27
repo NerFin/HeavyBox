@@ -13,6 +13,7 @@ public class Entry extends JavaPlugin {
 
         this.getLogger().warning("Плагин создал NerFin");
 
+        EconomyManager.setPlugin(this);
         EconomyManager.init();
         BoxData.setPlugin(this);
         Utils.setPlugin(this);

@@ -17,6 +17,10 @@ config:
   #Зарплата за доставку груза
   money: 10
 
+  #Использовать альтернативную команду для выдачи денег/предметов (true - Да, false - Нет)
+  useAlternativeCommand: false
+  alternativeCommand: "give {player} diamond 1"
+
   #Название груза
   itemName: "&eСноп сена"
   itemLore:

@@ -23,6 +23,8 @@ public class BoxData {
     private String boxRgSkladName = plugin.getConfig().getString("config.skladRegionName");
     private String boxRgZonaName = plugin.getConfig().getString("config.zonaRegionName");
     private String boxDeliveryMethod = plugin.getConfig().getString("config.boxDeliveryMethod");
+    private Boolean useAlternativeCommand = plugin.getConfig().getBoolean("config.useAlternativeCommand");
+    private String alternativeCommand = plugin.getConfig().getString("config.alternativeCommand");
 
     private String itemName = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("config.itemName"));
     private int countMoney = Integer.parseInt(plugin.getConfig().getString("config.money"));
@@ -46,6 +48,14 @@ public class BoxData {
             itemLore.set(i, ChatColor.translateAlternateColorCodes('&', itemLore.get(i)));
         }
         return itemLore;
+    }
+
+    public Boolean getUseAlternativeCommand() {
+        return useAlternativeCommand;
+    }
+
+    public String getAlternativeCommand() {
+        return alternativeCommand;
     }
 
     public String getItemName() {
